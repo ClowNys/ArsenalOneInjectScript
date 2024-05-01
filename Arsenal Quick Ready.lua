@@ -1,5 +1,6 @@
 --AIMBOT
 
+
 --// Cache
 
 local select = select
@@ -39,7 +40,7 @@ Environment.Settings = {
 	Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
 	ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 	ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
-	TriggerKey = "E",
+	TriggerKey = "MouseButton2",
 	Toggle = false,
 	LockPart = "Head" -- Body part to lock on
 }
@@ -261,7 +262,9 @@ Load()
 
 
 
+
 --ESP
+
 
 local function API_Check()
     if Drawing == nil then
@@ -456,7 +459,5 @@ elseif Errored and not Success then
     end
     TestService:Message("The ESP script has errored, please notify Exunys with the following information :")
     warn(Errored)
-    print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
-end
     print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
 end
